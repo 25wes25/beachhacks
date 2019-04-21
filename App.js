@@ -114,12 +114,12 @@ const BottomTabNavigator = createBottomTabNavigator({
 
 export const AppStack = createStackNavigator({
         LandingScreen: LandingScreen,
-        Main: BottomTabNavigator,
+        MainScreen: BottomTabNavigator,
 },
     {
         navigationOptions: ({navigation}) => {
             let headerOption = {};
-            if (navigation.state.routeName === 'Dashboard') {
+            if (navigation.state.routeName === 'LandingScreen') {
                 headerOption.header = null;
             }
             return {
@@ -133,8 +133,7 @@ export const AppStack = createStackNavigator({
     });
 
 export default class Main extends React.Component {
-    constructor(props)
-    {
+    constructor(props) {
         super(props);
         this.state = {
             route: {
