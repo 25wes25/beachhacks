@@ -10,6 +10,7 @@ import React from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import {createAppContainer, createBottomTabNavigator} from "react-navigation";
 import {HomeScreen} from './src/HomeScreen'
+import {LoginScreen} from './src/LoginScreen'
 import {CalendarScreen} from './src/CalendarScreen'
 import {MapScreen} from "./src/MapScreen";
 import {ProfileScreen} from "./src/ProfileScreen";
