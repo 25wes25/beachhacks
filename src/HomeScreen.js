@@ -1,6 +1,6 @@
 import React from 'react';
-import {Text, View} from "react-native";
-
+import {Button, Text, View} from "react-native";
+import {LandingScreen} from "./LandingScreen";
 
 export class HomeScreen extends React.Component {
     render(){
