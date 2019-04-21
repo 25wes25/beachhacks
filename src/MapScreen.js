@@ -22,15 +22,12 @@ export class MapScreen extends React.Component {
                 </View>
                 <View style={{flex: 6, alignItems: "center", justifyContent: "center"}}>
                     <MapView
-                        provider={PROVIDER_GOOGLE}
-                        style={{flex: 1}}
-                        region={{
+                        initialRegion= {{
                             latitude: 42.882004,
                             longitude: 74.582748,
                             latitudeDelta: 0.0922,
                             longitudeDelta: 0.0421
                         }}
-                        showsUserLocation
                     />
                 </View>
                 <View style={{flex: 1, alignItems: "center", justifyContent: "center", flexDirection: "row",}}>
