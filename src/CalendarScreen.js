@@ -1,27 +1,70 @@
 import React from 'react';
 import {FlatList, Image, StyleSheet, Text, View} from "react-native";
-
+import Firebase from 'react-native-firebase';
 
 export class CalendarScreen extends React.Component {
     render(){
         return(
             <FlatList
                 data={[
-                    {   eventMonth: "April",
-                        eventDay: "20",
-                        eventWeekDay: "SAT",
-                        eventTitle: "Coachella",
-                        eventLocation: "Coachella Valley, CA",
-                        eventLogo: "",},
+                    // {   eventDates: [Date('April 12, 2019'), Date('April 13, 2019'), Date('April 14, 2019')],
+                    //     eventTitle: "Coachella",
+                    //     eventLocation: "Indio, CA",
+                    //     eventLogo: "escape_halloween",
+                    //     eventColor: '#b58900'},
                     {   eventMonth: "July",
                         eventDay: "30",
                         eventWeekDay: "SUN",
                         eventTitle: "Val's Birthday",
                         eventLocation: "Bellflower, CA",
-                        eventLogo: "",},
+                        eventLogo: "",
+                        eventColor: '#b58900'},
+                    {   eventMonth: "July",
+                        eventDay: "30",
+                        eventWeekDay: "SUN",
+                        eventTitle: "Val's Birthday",
+                        eventLocation: "Bellflower, CA",
+                        eventLogo: "",
+                        eventColor: '#b58900'},
+                    {   eventMonth: "July",
+                        eventDay: "30",
+                        eventWeekDay: "SUN",
+                        eventTitle: "Val's Birthday",
+                        eventLocation: "Bellflower, CA",
+                        eventLogo: "",
+                        eventColor: '#b58900'},
+                    {   eventMonth: "July",
+                        eventDay: "30",
+                        eventWeekDay: "SUN",
+                        eventTitle: "Val's Birthday",
+                        eventLocation: "Bellflower, CA",
+                        eventLogo: "",
+                        eventColor: '#b58900'},
+                    {   eventMonth: "July",
+                        eventDay: "30",
+                        eventWeekDay: "SUN",
+                        eventTitle: "Val's Birthday",
+                        eventLocation: "Bellflower, CA",
+                        eventLogo: "",
+                        eventColor: '#b58900'},
+                    {   eventMonth: "July",
+                        eventDay: "30",
+                        eventWeekDay: "SUN",
+                        eventTitle: "Val's Birthday",
+                        eventLocation: "Bellflower, CA",
+                        eventLogo: "",
+                        eventColor: '#b58900'},
                 ]}
                 renderItem={({item}) =>
-                    <View style={styles.eventCard}>
+                    <View style={{
+                        flex: 1,
+                        flexDirection: "row",
+                        backgroundColor: item.eventColor,
+                        marginLeft: 10,
+                        marginRight: 10,
+                        marginTop: 10,
+                        padding: 5,
+                    }}>
                         <View style={styles.eventDateBox}>
                             <Text style={styles.eventMonth}>{item.eventMonth}</Text>
                             <Text style={styles.eventDay}>{item.eventDay}</Text>
@@ -33,7 +76,7 @@ export class CalendarScreen extends React.Component {
                             <Text style={styles.eventLocation}>{item.eventLocation}</Text>
                         </View>
                         <View style={styles.eventLogoBox}>
-                            <View style={{flex: 1, backgroundColor: "#123456"}}/>
+                            {/*<Image source={require('../assets/festivalimages/${item.eventLogo}')}/>*/}
                         </View>
                     </View>
                 }

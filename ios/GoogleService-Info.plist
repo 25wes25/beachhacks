@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>303740449745-49iu1j14igdb15h0og2pl08b0st6ad9h.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.303740449745-49iu1j14igdb15h0og2pl08b0st6ad9h</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDv--DsJR2Zcve8hxOeK207U9wbJxvjsIE</string>
+	<key>GCM_SENDER_ID</key>
+	<string>303740449745</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>org.reactjs.native.example.beachhacks</string>
+	<key>PROJECT_ID</key>
+	<string>beachhacks-296ac</string>
+	<key>STORAGE_BUCKET</key>
+	<string>beachhacks-296ac.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:303740449745:ios:ea020b5db991f2a9</string>
+	<key>DATABASE_URL</key>
+	<string>https://beachhacks-296ac.firebaseio.com</string>
+</dict>
+</plist>
