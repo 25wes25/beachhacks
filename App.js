@@ -70,8 +70,8 @@ const ProfileStack = createStackNavigator(
     });
 
 const BottomTabNavigator = createBottomTabNavigator({
-    Home: HomeStack,
     Calendar: CalendarStack,
+    Home: HomeStack,
     Map: MapStack,
     Profile: ProfileStack
 
@@ -113,9 +113,9 @@ const BottomTabNavigator = createBottomTabNavigator({
 //Figure out if you still need this for login pages and shit
 
 export const AppStack = createStackNavigator({
-        LandingScreen: LandingScreen,
         MainScreen: BottomTabNavigator,
-},
+        LandingScreen: LandingScreen,
+    },
     {
         navigationOptions: ({navigation}) => {
             let headerOption = {};
@@ -137,7 +137,7 @@ export default class Main extends React.Component {
         super(props);
         this.state = {
             route: {
-                name: 'LandingScreen',
+                name: 'MainScreen',
                 passProps:{
                     notification: props.notification
                 }

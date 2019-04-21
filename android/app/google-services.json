@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "303740449745",
+    "firebase_url": "https://beachhacks-296ac.firebaseio.com",
+    "project_id": "beachhacks-296ac",
+    "storage_bucket": "beachhacks-296ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:303740449745:android:5cf45d0a6b19276d",
+        "android_client_info": {
+          "package_name": "com.beachhacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "303740449745-63717dtjovcd2t7eof36p504d4pabpn3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpf5b5ecpFpMiwTdtdeqcQXdUhV86MjFk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "303740449745-63717dtjovcd2t7eof36p504d4pabpn3.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "303740449745-49iu1j14igdb15h0og2pl08b0st6ad9h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "org.reactjs.native.example.beachhacks"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
