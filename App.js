@@ -6,44 +6,78 @@
  * @flow
  */
 
-import React, {Component} from 'react';
+import React from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
+import {createAppContainer, createBottomTabNavigator} from "react-navigation";
+import {HomeScreen} from './src/HomeScreen'
+import {CalendarScreen} from './src/CalendarScreen'
+import {MapScreen} from "./src/MapScreen";
+import {ProfileScreen} from "./src/ProfileScreen";
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
+export default class MyApp extends React.Component {
+    render() {
+        return (<App/>);
+    }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
+console.ignoredYellowBox = ['Warning: componentWillReceiveProps'];
+
+const AppTabNavigator = createBottomTabNavigator({
+    Home: HomeScreen,
+    Calendar: CalendarScreen,
+    Map: MapScreen,
+    Profile: ProfileScreen
+
+}, {
+
+    navigationOptions: ({navigation}) => ({
+        //define the icon for each tab here...
+        tabBarIcon: ({focused, tintColor}) => {
+            const {routeName} = navigation.state;
+
+            let icon;
+            switch (routeName) {
+                case 'Home':
+                    //add icons here
+                    break;
+                case 'Camera':
+                    break;
+            }
+
+            return <Ionicons
+                name={icon}
+                size={25}
+                color={tintColor}/>;
+        },
+    }),
+    tabBarOptions: {
+        initialRouteName: 'Home',
+        activeTintColor: '#fff',
+        inactiveTintColor: '#ddd',
+        style: {
+            backgroundColor: '#4d535e',
+        }
+    }
 });
+
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#F5FCFF',
+    },
+    welcome: {
+        fontSize: 20,
+        textAlign: 'center',
+        margin: 10,
+    },
+    instructions: {
+        textAlign: 'center',
+        color: '#333333',
+        marginBottom: 5,
+    },
+});
+
+const App = createAppContainer(AppTabNavigator);
