@@ -1,5 +1,6 @@
 import React from 'react';
 import {ImageBackground, ScrollView, TouchableOpacity, StyleSheet, Button, Text, View, Image} from "react-native";
+import Dash from 'react-native-dash';
 import {LandingScreen} from "./LandingScreen";
 import {FlatGrid} from 'react-native-super-grid';
 
@@ -14,18 +15,15 @@ export class HomeScreen extends React.Component {
 
 
         return(
-            <ScrollView>
+            <ScrollView style={{backgroundColor:'black'}}>
                 <View style={styles.col}>
 
-                    <View style={styles.picture}>
-                        <Text style ={styles.upcomingEvents}>Upcoming Events</Text>
-                    </View>
                     <View style={styles.pictureBox}>
 
                         <Image
-                            resizeMode="contain"
                             source={require('./assets/Home/coachella.jpg')}
                             style={styles.picture}
+                            resizeMode="cover"
                             />
 
                     </View>
@@ -33,16 +31,24 @@ export class HomeScreen extends React.Component {
                     <View style={{
                         flex: 1,
                         flexDirection: 'row',
-                        justifyContent: 'space-around',
+                        justifyContent: 'flex-start',
                         alignItems: 'stretch',
+                        marginTop: 10
                     }}>
-                        <View style={{height: 100, backgroundColor: 'beige'}}>
-                            <Text style ={styles.upcomingEvents}>C O A C H E L L A </Text>
+                        <View style={{height: 50, backgroundColor: 'black'}}>
+                            <Text style ={styles.eventTitle}>coachella </Text>
                         </View>
-                        <View style={{height: 100, backgroundColor: 'blue'}}>
-                            <Text style ={styles.upcomingEvents}>T E S T</Text>
-                        </View>
+
                     </View>
+
+                    <View
+                        style={{
+                            marginTop: 13,
+                            borderBottomColor: 'white',
+                            borderBottomWidth: 3,
+                            marginBottom: 15,
+                        }}
+                    />
 
                     <View style={{
                         flex: 1,
@@ -55,25 +61,29 @@ export class HomeScreen extends React.Component {
                             flex: 1,
                             marginLeft: 5,
                             flexDirection: 'row',
-                            justifyContent: 'flex-start',
+                            justifyContent: 'space-around',
                             alignItems: 'stretch',
                         }}>
 
-                            <View style={{height: 100, backgroundColor: 'gray'}}>
+                            <View style={{height: 150, backgroundColor: 'black'}}>
                                 <Image
-                                    source={require('./assets/Home/profilepicture.jpg')}
-                                    style={{width: 100, height: 100, borderRadius: 100/ 2}}
+                                    source={require('./assets/Home/coachellaGirl.png')}
+                                    style={{width: 150, height: 150, borderRadius: 150/ 2}}
                                 />
                             </View>
-                            <View style={{height: 100, backgroundColor: 'blue'}}>
-                                <Text style ={styles.upcomingEvents}>P R O F I L E </Text>
+                            <View style={{height: 150, backgroundColor: 'black'}}>
+
+                                    <Image
+                                        source={require('./assets/Home/stickerCoachella.png')}
+                                        style={styles.picture}
+                                        resizeMode="cover"
+                                    />
+                                    <Text>vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv</Text>
+
                             </View>
 
                         </View>
 
-                        <View style={{height: 100, marginRight: 5, backgroundColor: 'beige'}}>
-                            <Text style ={styles.upcomingEvents}>T E S T</Text>
-                        </View>
 
                     </View>
 
@@ -121,6 +131,15 @@ const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'stretch',
     },
+    eventTitle: {
+        fontFamily: 'Leixo',
+        fontSize: 50,
+        color: '#d33983',
+        borderColor: 'white',
+        borderRadius: 3,
+        textAlign:'left',
+
+    },
     upcomingEvents: {
         fontFamily: 'KGSummerSunshine',
         fontSize: 25,
@@ -129,9 +148,10 @@ const styles = StyleSheet.create({
 
     },
     pictureBox: {
-        height: 200,
+        height: 250,
         marginLeft: 10,
         marginRight: 10,
+        marginTop: 10,
         backgroundColor: 'steelblue'
     },
     picture: {
