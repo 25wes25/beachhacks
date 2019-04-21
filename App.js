@@ -14,6 +14,8 @@ import {CalendarScreen} from './src/CalendarScreen';
 import {MapScreen} from "./src/MapScreen";
 import {ProfileScreen} from "./src/ProfileScreen";
 import {LandingScreen} from "./src/LandingScreen";
+
+
 import styles from './utils/styles';
 
 
@@ -113,7 +115,7 @@ const BottomTabNavigator = createBottomTabNavigator({
 //Figure out if you still need this for login pages and shit
 
 export const AppStack = createStackNavigator({
-        LandingScreen: LandingScreen,
+       // LandingScreen: LandingScreen,
         Main: BottomTabNavigator,
 },
     {

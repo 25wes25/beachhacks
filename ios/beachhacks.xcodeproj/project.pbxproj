@@ -41,6 +41,9 @@
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 		2B2BDD8216B445308F43A4A0 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A31484628F1D4BBBABEB7EF0 /* libRNGestureHandler.a */; };
 		61E4DCEE893D418487163A24 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 51A2D056DF8146F491E34639 /* libRNGestureHandler-tvOS.a */; };
+		954FB649B1F146DEAD667298 /* KGSummerSunshine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E58EBB41A6F34DD79BB5A0AB /* KGSummerSunshine.ttf */; };
+		1D6EEAD34BE34E8DAF37F7D2 /* KGSummerSunshineBlackout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CD83DC8781440D484BD77D7 /* KGSummerSunshineBlackout.ttf */; };
+		96DCF6D8503E472388D99131 /* KGSummerSunshineShadow.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7D6FFEE7AD144181BE4033CB /* KGSummerSunshineShadow.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -351,6 +354,9 @@
 		DBC00C62722B4F08B67046FE /* RNGestureHandler.xcodeproj */ = {isa = PBXFileReference; name = "RNGestureHandler.xcodeproj"; path = "../node_modules/react-native-gesture-handler/ios/RNGestureHandler.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		A31484628F1D4BBBABEB7EF0 /* libRNGestureHandler.a */ = {isa = PBXFileReference; name = "libRNGestureHandler.a"; path = "libRNGestureHandler.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		51A2D056DF8146F491E34639 /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		E58EBB41A6F34DD79BB5A0AB /* KGSummerSunshine.ttf */ = {isa = PBXFileReference; name = "KGSummerSunshine.ttf"; path = "../src/assets/fonts/KGSummerSunshine.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CD83DC8781440D484BD77D7 /* KGSummerSunshineBlackout.ttf */ = {isa = PBXFileReference; name = "KGSummerSunshineBlackout.ttf"; path = "../src/assets/fonts/KGSummerSunshineBlackout.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		7D6FFEE7AD144181BE4033CB /* KGSummerSunshineShadow.ttf */ = {isa = PBXFileReference; name = "KGSummerSunshineShadow.ttf"; path = "../src/assets/fonts/KGSummerSunshineShadow.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -592,6 +598,7 @@
 				00E356EF1AD99517003FC87E /* beachhacksTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				03E13B348C974477A6C8131C /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -617,6 +624,17 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		03E13B348C974477A6C8131C /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				E58EBB41A6F34DD79BB5A0AB /* KGSummerSunshine.ttf */,
+				8CD83DC8781440D484BD77D7 /* KGSummerSunshineBlackout.ttf */,
+				7D6FFEE7AD144181BE4033CB /* KGSummerSunshineShadow.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -1064,6 +1082,9 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				954FB649B1F146DEAD667298 /* KGSummerSunshine.ttf in Resources */,
+				1D6EEAD34BE34E8DAF37F7D2 /* KGSummerSunshineBlackout.ttf in Resources */,
+				96DCF6D8503E472388D99131 /* KGSummerSunshineShadow.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
