@@ -35,43 +35,43 @@ export class LoginScreen extends Component {
                         justifyContent: "center",
                         margin: 20,
                     }}>
-                        <View style={{flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden"}}>
+                        <View style={{flex: 1, alignItems: "center", justifyContent: "center",}}>
 
-                            <TouchableOpacity onPress={this.onPress} style={{flex: 1,}}>
-                                <Image style={{
-                                    flex: 1,
-                                    resizeMode: 'center',
-                                    backgroundColor: "#4169e1",
-                                    margin: 4,
-                                }}
-                                       source={require('./assets/loginscreen/homeIcon.png')}
-                                />
+                            <TouchableOpacity onPress={this.onPress} style={{flex: 1, backgroundColor: "#4169e1", width: 80,}}>
+                                <Text style={{
+                                    color: 'white',
+                                    fontSize: 24,
+                                    fontWeight: 'bold',
+                                    textAlignVertical: 'center',
+                                    textAlign: 'center',
+                                    marginVertical: 4,
+                                }}>f</Text>
                             </TouchableOpacity>
                         </View>
-                        <View style={{flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden"}}>
+                        <View style={{flex: 1, alignItems: "center", justifyContent: "center",}}>
 
-                            <TouchableOpacity onPress={this.onPress} style={{flex: 1,}}>
-                                <Image style={{
-                                    flex: 1,
-                                    resizeMode: 'center',
-                                    backgroundColor: "#ff6347",
-                                    margin: 4,
-                                }}
-                                       source={require('./assets/loginscreen/homeIcon.png')}
-                                />
+                            <TouchableOpacity onPress={this.onPress} style={{flex: 1, backgroundColor: "#ff6347", width: 80,}}>
+                                <Text style={{
+                                    color: 'white',
+                                    fontSize: 24,
+                                    fontWeight: 'bold',
+                                    textAlignVertical: 'center',
+                                    textAlign: 'center',
+                                    marginVertical: 4,
+                                }}>g+</Text>
                             </TouchableOpacity>
                         </View>
-                        <View style={{flex: 1, alignItems: "center", justifyContent: "center", overflow: "hidden"}}>
+                        <View style={{flex: 1, alignItems: "center", justifyContent: "center",}}>
 
-                            <TouchableOpacity onPress={this.onPress} style={{flex: 1,}}>
-                                <Image style={{
-                                    flex: 1,
-                                    resizeMode: 'center',
-                                    backgroundColor: "yellow",
-                                    margin: 4,
-                                }}
-                                       source={require('./assets/loginscreen/homeIcon.png')}
-                                />
+                            <TouchableOpacity onPress={this.onPress} style={{flex: 1, backgroundColor: "yellow", width: 80,}}>
+                                <Text style={{
+                                    color: 'white',
+                                    fontSize: 24,
+                                    fontWeight: 'bold',
+                                    textAlignVertical: 'center',
+                                    textAlign: 'center',
+                                    marginVertical: 4,
+                                }}>S</Text>
                             </TouchableOpacity>
                         </View>
                     </View>
